@@ -1,0 +1,141 @@
+body{
+  font-family: helvetica-light;
+}
+.row{
+  margin:0;
+}
+h1{
+  font-size: 5em;
+}
+h2{
+  font-size: 4em;
+}
+a,a:hover,a:active{
+  text-decoration: none;
+  color:#14b97d;
+}
+section{
+  height:100vh;
+  min-height:100%;
+  max-height:100%;
+  background: #000;
+}
+section:nth-child(2n){
+  background: #fff;
+}
+section h2{
+  color:#14b97d;
+  text-transform: uppercase;
+}
+.intro{
+
+  position: relative;
+}
+.intro .content{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(17%);
+}
+.intro h1{
+  color:#14b97d;
+  font-family: Segoe UI Bold;
+  text-transform: uppercase;
+}
+.intro p{
+  color: #fff;
+  font-size: 2vw;
+  padding: 16px 0 50px 0;
+  line-height: 1.3em;
+}
+a.hireMe{
+  font-size: 2vw;
+  text-transform: uppercase;
+  border: 1px solid #14b97d;
+  border-radius: 4px;
+  padding:5px;
+}
+.profile-pic-holder{
+  height:150px;
+  width:100px;
+}
+.about .content{
+  width: 90%;
+  margin:0 auto;
+}
+.about p{
+  font-size: 2vw;
+  padding: 10px 0 25px 0;
+  line-height: 1.6em;
+}
+/* SKILLS MATRIX ANIMATIONS*/
+
+@-webkit-keyframes load {
+    0% {
+        stroke-dashoffset: 0
+    }
+}
+@-moz-keyframes load {
+    0% {
+        stroke-dashoffset: 0
+    }
+}
+@keyframes load {
+    0% {
+        stroke-dashoffset: 0
+    }
+}
+
+.progress>li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #93A2AC;
+  font-family: Lato;
+  font-weight: 100;
+  margin: 2rem;
+}
+
+.progress>li:before {
+  content: attr(data-name);
+  position: absolute;
+  width: 100%;
+  bottom: -2rem;
+  font-weight: 400;
+}
+
+.progress>li:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 3.7rem;
+  left: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.progress svg {
+  width: 10rem;
+  height: 10rem;
+}
+
+.progress svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+}
+
+.progress svg:nth-child(2) path {
+  fill: none;
+  stroke-width: 25;
+  stroke-dasharray: 629;
+  stroke: rgba(255, 255, 255, 0.9);
+  -webkit-animation: load 10s;
+  -moz-animation: load 10s;
+  -o-animation: load 10s;
+  animation: load 10s;
+}
+/* SKILLS MATRIX ANIMATIONS*/
