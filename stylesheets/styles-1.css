@@ -1,5 +1,5 @@
 body {
-    font-family: helvetica-light;
+    font-family: 'Roboto','Helvetica';
     /*padding-top: 50px;*/
 }
 .row {
@@ -40,6 +40,7 @@ section {
     max-height: 100%;
     background: #000;
     padding-top: 50px;
+    border-bottom: 4px solid #DB4105;
 }
 section:nth-child(2n+1) {
     background: #fff;
@@ -67,6 +68,7 @@ section h2 {
 .intro h1 {
     color: #14b97d;
     font-family: Segoe UI Bold;
+    font-family: 'Cookie', cursive;
     text-transform: uppercase;
 }
 .intro p {
